@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="id"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;DAR Online Salesman - ADB V2&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">*{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-sizing:border-box;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-family:Arial, sans-serif;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">body{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#f5f7fb;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding-bottom:30px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.header{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:linear-gradient(135deg,#0F4C81,#1D6FB8);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:25px 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:0 0 25px 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 4px 12px rgba(0,0,0,.15);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.header h1{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:22px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.header p{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-top:5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>opacity:.9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:14px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.search-box{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:15px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.search-box input{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width:100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 2px 8px rgba(0,0,0,.1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:14px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.section{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:0 15px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.rayon-title{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin:20px 0 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#0F4C81;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:bold;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.card{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom:12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content:space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-shadow:0 2px 10px rgba(0,0,0,.08);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.profile{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>gap:12px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.avatar{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width:50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height:50px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#0F4C81;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display:flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:bold;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.info h3{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#222;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.info p{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:13px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#666;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.btn{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background:#F7B500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#000;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-decoration:none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding:10px 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:13px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.btn:hover{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>opacity:.9;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.footer{</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align:center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin-top:20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>color:#666;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>font-size:12px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;DAR ONLINE SALESMAN&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;ADB Versi 2&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="search-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input type="text" id="searchInput" placeholder="Cari nama salesman..."&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div id="salesContainer"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="section"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="rayon-title"&gt;RAYON A&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;C&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;CANVAS 2&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon A&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1BwyQZTWYoWEBKAjH8CGZsoEzOScxpFaH8VMhxr8xMxg/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;C&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;CANVAS 1&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon A&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1q59kksy-sJlrD0TRmalZV8GpbPnbsQf1wI-YYqsH7L8/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;J&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;JAMIL&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon A&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1ujfNqB6_tzoWpUZbix1rAqMXyxrLKX9RJ_Kk2DHM5C8/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;E&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;EGI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon A&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1uBgRqOy43sJ0SYbdvA-RyuC7j4ATPM9XjclkVa8CE7Y/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;H&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;HADI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon A&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1E7X9fKFzxCb2_DOo0ptmlINPrbG4i2Y04B9dsZ9QH3c/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="rayon-title"&gt;RAYON B&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;D&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;DIKI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon B&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1j01Uw23LaU8_gqHLmiP4fX2w_1w-_hwBxuQT8MUtYo4/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;S&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;SETIADI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon B&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1xfzMDOqwqlIjDWkXTkOB2QDE6h77gjeYMr7IqC4bmlA/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;T&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;TEGUH&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon B&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1PYS-cJR27tY3F6pWAl_w5Ej0aQ4RZ0BQTuxoJj-rEvg/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;A&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;ALVIN&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon B&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1DBnPh15T0ki87S2Wh5f3Zu-qSVc7XrLdAe8fSNYgzoE/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="rayon-title"&gt;RAYON C&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;D&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;DENI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon C&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1e1GgN8yPUiCBA7ITrOmTzOV00YXwiYKQFowUpabxSMs/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;A&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;ANWAR&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon C&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1_Sc9I9_QMt2UDVH0W8lStwTnyYZeZPrjfM53SqE-2q0/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;R&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;RIKI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon C&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/191RdvbivyMELQHlf9ucfeeahxIGx7oz8i5Qvk01uNws/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="rayon-title"&gt;RAYON D&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;A&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;ANDRI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon D&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1uVrwim4npMTcc_zWFZSpr5GOhMcbvgqiapWnLCt-o2g/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="card"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="profile"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="avatar"&gt;H&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;div class="info"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h3&gt;HARVI&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1">&lt;p&gt;Rayon D&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;a class="btn" target="_blank"</span></p>
+<p class="p1"><span class="s1">href="https://docs.google.com/spreadsheets/d/1fGEkt4StwG32hFMgtSiVW8FLmmLzcmGtwzpFeEOhSKc/edit?gid=303189266#gid=303189266"&gt;BUKA DAR&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="footer"&gt;</span></p>
+<p class="p1"><span class="s1">ADB Sales Monitoring System © 2026</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">document.getElementById("searchInput").addEventListener("keyup", function() {</span></p>
+<p class="p1"><span class="s1">let filter = this.value.toUpperCase();</span></p>
+<p class="p1"><span class="s1">let cards = document.querySelectorAll(".card");</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">cards.forEach(card =&gt; {</span></p>
+<p class="p1"><span class="s1">let text = card.innerText.toUpperCase();</span></p>
+<p class="p1"><span class="s1">card.style.display = text.includes(filter) ? "" : "none";</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p1"><span class="s1">});</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
